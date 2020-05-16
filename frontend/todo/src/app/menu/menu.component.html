@@ -1,0 +1,17 @@
+<header>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div><a routerLink="" class="navbar-brand">TODO-APP</a></div>
+    
+    <ul class="navbar-nav">
+      <li *ngIf="HardcodedAuthenticationService.isUserLoggedin()"><a routerLink="/welcome/Ashish" class="nav-link">HOME</a> </li>
+      <li *ngIf="HardcodedAuthenticationService.isUserLoggedin()"><a routerLink="/todos" class="nav-link">TODO</a> </li>
+
+    </ul>
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+      <li *ngIf="!HardcodedAuthenticationService.isUserLoggedin()"><a routerLink="/login" class="nav-link">Login</a> </li>
+      <li *ngIf="HardcodedAuthenticationService.isUserLoggedin()"><a routerLink="/logout" class="nav-link">Logout</a> </li>
+    </ul>
+
+  </nav>
+
+</header>
