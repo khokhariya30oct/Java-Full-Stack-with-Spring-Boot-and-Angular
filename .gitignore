@@ -1,0 +1,17 @@
+**/HTTPMonitor/current/*.xml
+**/Browsers/**
+**/debuggingView.*
+**/var/**/**
+**/Components
+**/netbeans/modules
+**/conf
+**/logs
+**/TargetModules
+**/org-netbeans-modules-*.*
+# **/org-netbeans-modules-schema2beans.jar
+**/config
+**/core
+**/.mvn
+*.class
+**/localhost/
+

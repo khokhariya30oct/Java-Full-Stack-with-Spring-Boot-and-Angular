@@ -1,0 +1,4 @@
+This directory is used by the NetBeans HTTP Monitor module. The HTTP Monitor jar 
+files will be loaded by the Tomcat Common class loader.
+
+Please do not modify the content of this directory.
