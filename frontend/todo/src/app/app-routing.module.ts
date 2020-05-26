@@ -6,12 +6,14 @@ import { ErrorComponent } from './error/error.component';
 import { ListTodosComponent } from './list-todos/list-todos.component';
 import { LogoutComponent } from './logout/logout.component';
 import { RouteGaurdService } from './services/route-gaurd.service';
+import { TodoEditComponent } from './todo-edit/todo-edit.component';
 
 const routes: Routes = [
   {path :'',component:LoginComponent},  
   {path :'login',component:LoginComponent},
   {path :'welcome/:name',component:WelcomeComponent, canActivate : [RouteGaurdService]},
   {path :'todos',component:ListTodosComponent , canActivate : [RouteGaurdService]},
+  {path :'todos/:id',component:TodoEditComponent, canActivate : [RouteGaurdService]},
   {path :'logout',component:LogoutComponent, canActivate : [RouteGaurdService]},
 
 

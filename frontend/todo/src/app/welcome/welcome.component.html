@@ -4,5 +4,12 @@
   <h1>Welcome!</h1>
   <br>
   Hey <b>{{name}}</b>!!! You can create Your Todo list here <a routerLink="/todos">Click</a>
+
+  <br><br>
+  <div>
+    <button (click) = getMeRestCall() class="btn btn-info">Click here to connect with Rest API</button>
+    <p *ngIf="restRes">{{restRes}}</p>
+    <p *ngIf="errorMsg">{{errorMsg.message}}</p>
+  </div>
 </div>
 
